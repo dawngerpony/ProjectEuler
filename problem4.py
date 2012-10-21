@@ -14,7 +14,7 @@ def isPalindrome(n):
     else:
         return False
 
-def findLargestPalindrome(numbers):
+def findLargestPalindrome():
     '''
     Finds the largest palindrome from a list of factors:
     1. Create a set of tuples containing all combinations of the elements in the list.
@@ -22,6 +22,7 @@ def findLargestPalindrome(numbers):
     3. Sort/reverse the list so the highest number comes first (an optimization)).
     4. Return the highest number that matches the qualification of being a palindrome.
     '''
+    numbers = range(10, 100)
     tuples = []
     for x in numbers:
         tuples += [[x,y] for y in numbers]
@@ -33,6 +34,4 @@ def findLargestPalindrome(numbers):
             return x
         
 if __name__=='__main__':
-    numbers = range(100, 1000)
-    print findLargestPalindrome(numbers)
-    
+    print findLargestPalindrome()
