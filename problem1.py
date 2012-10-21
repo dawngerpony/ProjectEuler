@@ -19,4 +19,5 @@ def ver2():
     '''
     print sum(set(range(0, 1000, 3) + range(0, 1000, 5)))
     
-ver1()
+if __name__=='__main__':
+    ver1()
