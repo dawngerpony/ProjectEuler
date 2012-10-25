@@ -1,7 +1,7 @@
 Project Euler
 =============
 
-My solutions to the problems in [Project Euler](http://www.projecteuler.net) in various languages.
+My solutions to the problems in [Project Euler](http://www.projecteuler.net) in Python (perhaps other languages soon).
 
 To run, simply execute the script:
 
