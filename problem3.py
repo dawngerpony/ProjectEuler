@@ -13,5 +13,9 @@ def primeFactors(n):
         d += 1
     return factors
 
-if __name__=='__main__':
+
+def run():
     print max(primeFactors(600851475143))
+
+if __name__=='__main__':
+	run()

@@ -18,6 +18,10 @@ def ver2():
     An optimisation I found on the forum (so I take no credit for it).
     '''
     print sum(set(range(0, 1000, 3) + range(0, 1000, 5)))
-    
-if __name__=='__main__':
+
+
+def run():
     ver1()
+
+if __name__=='__main__':
+    run()

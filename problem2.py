@@ -21,5 +21,8 @@ def ver1():
     print evenTerms
     print sum(evenTerms)
 
-if __name__=='__main__':
+def run():
     ver1()
+
+if __name__=='__main__':
+    run()

@@ -30,5 +30,9 @@ def difference(n):
 	squareOfSums = squareOfSumsIterative(n)
 	print "%d: %d - %d = %d" % (n, squareOfSums, sumofSquares, (squareOfSums - sumofSquares))
 
-difference(10)
-difference(100)
+
+def run():
+	difference(100)
+
+if __name__=='__main__':
+	run()

@@ -32,6 +32,10 @@ def findLargestPalindrome():
     for x in products:
         if(isPalindrome(x)):
             return x
-        
-if __name__=='__main__':
+
+
+def run():
     print findLargestPalindrome()
+
+if __name__=='__main__':
+    run()

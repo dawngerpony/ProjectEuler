@@ -3,7 +3,7 @@
 # "2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?"
 
-# This took a long time to do 
+# This took a long time to execute. 
 
 def dividesBy(n):
     numbers = range(1, n+1)
@@ -21,7 +21,8 @@ def dividesBy(n):
                 break
     return i
 
-start = time.time()
-print "Answer = %i " % dividesBy(19)
-end = time.time()
-print "Duration = %s" % end - start
+def run():
+    print "Answer = %i " % dividesBy(19)
+
+if __name__=='__main__':
+    run()
