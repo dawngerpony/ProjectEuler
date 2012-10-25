@@ -52,15 +52,28 @@ def maxProduct():
 	number = re.sub("\n", "", number)
 	# create character array x from the 1000-digit string
 	x = array.array('c', number)
+	ver2(x)
 
-	# Loop over each character in the array,
-	# calculating the max product
+# Loop over each character in the array,
+# calculating the max product
+def ver1(x):
 	maxval=0
 	for i in range(0, len(x)-4):
 		y = int(x[i]) * int(x[i+1]) * int(x[i+2]) * int(x[i+3]) * int(x[i+4])
 		if y > maxval:
 			maxval = y
-	# print maxval
+	print maxval
+
+def ver2(x):
+	maxval=0
+	for i in range(0, len(x)-4):
+		chunk = x[i:i+5]
+		y = 1
+		for j in chunk:
+			y *= int(j)
+		if y > maxval:
+			maxval = y
+	print maxval
 
 def run():
 	maxProduct()
